@@ -14,7 +14,7 @@
 #>
 
 param(
-    [string]$RbaseVersion = "4.1.3",
+    [string]$Rversion = "4.1.3",
     [switch]$NoInstallRstudio,
     [switch]$NoInstallRtools
 )
@@ -25,7 +25,7 @@ if (-not $IsWindows) {
 }
 
 $rUrls = @{
-    rbase = "https://cran.r-project.org/bin/windows/base/old/$RbaseVersion/R-$RbaseVersion-win.exe"
+    rbase = "https://cran.r-project.org/bin/windows/base/old/$Rversion/R-$Rversion-win.exe"
     rstudio = "https://download1.rstudio.org/desktop/windows/RStudio-2022.07.2-576.exe"
     rtools = "https://github.com/r-windows/rtools-installer/releases/download/2022-02-06/rtools40-x86_64.exe"
 }
